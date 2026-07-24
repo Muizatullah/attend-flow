@@ -1,16 +1,17 @@
-# React + Vite
+### AttendFlow
+- AttendFlowis a web-based smart attendance system that uses QR code  scanning and  GPS location verification to record student attendance efficiently and prevent fraud.
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## FEATURES
+Student registration and login
+QR code-based attendance marking
+Real-time time tracking
+Location verification to prevent proxy attendance
+Easy-to-use interface for students and lecturers
+## TOOLS USED
+- Git -React -css  -github
 
-Currently, two official plugins are available:
+# GOALS
+- To provide a fast, secure, and reliable attendance system that can be used in schools and institutions worldwide.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## AUTHOR
+- Bakri Muizat
