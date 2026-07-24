@@ -1,0 +1,108 @@
+.hero{
+    min-height:90vh;
+    display:flex;
+    align-items:center;
+    position:relative;
+    overflow:hidden;
+    background:
+    radial-gradient(circle at top left,#DBEAFE 0%,transparent 35%),
+    radial-gradient(circle at bottom right,#CCFBF1 0%,transparent 35%),
+    white;
+}
+
+.heroContainer{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:5rem;
+    padding:5rem 0;
+}
+
+.heroLeft{
+    flex:1;
+}
+
+.heroRight{
+    flex:1;
+    display:flex;
+    justify-content:center;
+    position:relative;
+}
+
+.badge{
+    display:inline-block;
+    background:#DBEAFE;
+    color:#2563EB;
+    padding:.7rem 1.3rem;
+    border-radius:50px;
+    font-weight:600;
+    margin-bottom:1.5rem;
+}
+
+.heroTitle{
+    font-size:4.3rem;
+    line-height:1.1;
+    color:#0F172A;
+    margin-bottom:1.5rem;
+}
+
+.heroDescription{
+    font-size:1.1rem;
+    color:#64748B;
+    line-height:1.8;
+    margin-bottom:2rem;
+}
+
+.heroFeatures{
+    list-style:none;
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:1rem;
+    margin-bottom:2.5rem;
+}
+
+.heroButtons{
+    display:flex;
+    gap:1rem;
+}
+
+.primaryBtn{
+    background:#2563EB;
+    color:white;
+    border:none;
+    padding:1rem 2rem;
+    border-radius:12px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.secondaryBtn{
+    background:white;
+    color:#2563EB;
+    border:2px solid #2563EB;
+    padding:1rem 2rem;
+    border-radius:12px;
+    font-weight:600;
+    cursor:pointer;
+}
+
+@media(max-width:992px){
+
+.heroContainer{
+flex-direction:column;
+text-align:center;
+}
+
+.heroFeatures{
+grid-template-columns:1fr;
+}
+
+.heroButtons{
+justify-content:center;
+}
+
+.heroTitle{
+font-size:3rem;
+}
+
+}
