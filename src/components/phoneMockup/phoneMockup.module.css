@@ -127,3 +127,21 @@
     }
 
 }
+
+@media (max-width:768px){
+
+.phone{
+    width:220px;
+    height:460px;
+}
+
+.qrBox{
+    width:130px;
+    height:130px;
+}
+
+.qrIcon{
+    font-size:4rem;
+}
+
+}

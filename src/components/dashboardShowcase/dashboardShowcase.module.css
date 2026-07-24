@@ -1,5 +1,22 @@
+.container{
+
+display:flex;
+
+align-items:center;
+
+justify-content:space-between;
+
+gap:4rem;
+
+padding:6rem 0;
+
+flex-wrap:wrap;
+
+}
+
+
 .right{
-    flex:1;
+    /* flex:1; */
 
     display:flex;
 
@@ -8,10 +25,42 @@
     align-items:center;
 
     position:relative;
+
+
+min-height:700px;
 }
 .showcase{
 
 position:relative;
 
-overflow:hidden;
+overflow:visible;
+}
+
+
+@media(max-width:992px){
+
+.container{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.left{
+
+width:100%;
+
+}
+
+.right{
+
+width:100%;
+
+min-height:650px;
+
+margin-top:3rem;
+
+}
+
 }

@@ -71,3 +71,16 @@ transform:translateY(0);
 }
 
 }
+
+@media (max-width:768px){
+
+.gpsCard{
+
+right:0;
+top:-15px;
+
+width:180px;
+
+}
+
+}

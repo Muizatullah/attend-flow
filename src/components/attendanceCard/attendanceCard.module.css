@@ -63,3 +63,16 @@ transform:translateY(0);
 }
 
 }
+
+@media (max-width:768px){
+
+.card{
+
+left:0;
+bottom:-20px;
+
+width:180px;
+
+}
+
+}

@@ -1,0 +1,85 @@
+.card{
+    background:#fff;
+    padding:2.5rem;
+    border-radius:24px;
+    box-shadow:0 20px 40px rgba(15,23,42,.08);
+    position:relative;
+    transition:.35s;
+    border:1px solid #E2E8F0;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.popular{
+    border:2px solid #2563EB;
+    transform:scale(1.05);
+}
+
+.popular:hover{
+    transform:scale(1.05) translateY(-10px);
+}
+
+.badge{
+    position:absolute;
+    top:-15px;
+    left:50%;
+    transform:translateX(-50%);
+    background:#2563EB;
+    color:#fff;
+    padding:.5rem 1rem;
+    border-radius:999px;
+    font-size:.85rem;
+    font-weight:600;
+}
+
+.card h3{
+    text-align:center;
+    color:#0F172A;
+}
+
+.card h1{
+    text-align:center;
+    margin:1.5rem 0;
+    color:#2563EB;
+    font-size:2.5rem;
+}
+
+.card h1 span{
+    font-size:1rem;
+    color:#64748B;
+}
+
+.card ul{
+    list-style:none;
+    margin:2rem 0;
+}
+
+.card li{
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+    margin-bottom:1rem;
+    color:#475569;
+}
+
+.card li svg{
+    color:#10B981;
+}
+
+.card button{
+    width:100%;
+    padding:1rem;
+    border:none;
+    border-radius:12px;
+    background:#2563EB;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.card button:hover{
+    background:#1D4ED8;
+}

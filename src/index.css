@@ -13,11 +13,16 @@ body{
     font-family: 'Inter', sans-serif ;
 }
 .container{
-  max-width: 1200px;
-  margin: 0 auto;
-  padding:0 1rem;
-}
 
+width:100%;
+
+max-width:1200px;
+
+margin:0 auto;
+
+padding:0 24px;
+
+}
 ul{
   list-style: none;
  
@@ -33,3 +38,5 @@ img{
   height: auto;
   display: block;
 }
+
+

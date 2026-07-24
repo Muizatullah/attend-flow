@@ -184,3 +184,92 @@ export const howItWorksData = [
     description: "Reports and analytics are generated instantly.",
   },
 ];
+
+
+
+
+
+
+
+
+
+
+export const testimonialData = [
+  {
+    id: 1,
+    name: "Dr. Ibrahim Musa",
+    role: "Lecturer",
+    image: "https://i.pravatar.cc/150?img=12",
+    comment:
+      "AttendFlow has transformed the way attendance is managed in our faculty. It saves time and eliminates manual errors.",
+    rating: 5,
+  },
+
+  {
+    id: 2,
+    name: "Sarah Johnson",
+    role: "Student",
+    image: "https://i.pravatar.cc/150?img=32",
+    comment:
+      "Scanning the QR code takes just a few seconds. It's fast, secure and convenient.",
+    rating: 5,
+  },
+
+  {
+    id: 3,
+    name: "Mr. Adewale",
+    role: "Administrator",
+    image: "https://i.pravatar.cc/150?img=18",
+    comment:
+      "Generating attendance reports has become effortless. AttendFlow is exactly what our institution needed.",
+    rating: 5,
+  },
+];
+
+
+export const pricingData = [
+  {
+    id: 1,
+    title: "Starter",
+    price: "₦50,000",
+    duration: "/month",
+    popular: false,
+    features: [
+      "Up to 500 Students",
+      "QR Attendance",
+      "Attendance Reports",
+      "Email Support",
+    ],
+  },
+
+  {
+    id: 2,
+    title: "Professional",
+    price: "₦120,000",
+    duration: "/month",
+    popular: true,
+    features: [
+      "Unlimited Students",
+      "QR Attendance",
+      "GPS Verification",
+      "Analytics Dashboard",
+      "PDF Export",
+      "Admin Dashboard",
+    ],
+  },
+
+  {
+    id: 3,
+    title: "Enterprise",
+    price: "Custom",
+    duration: "",
+    popular: false,
+    features: [
+      "Unlimited Everything",
+      "Multiple Campuses",
+      "Dedicated Manager",
+      "API Integration",
+      "24/7 Support",
+    ],
+  },
+];

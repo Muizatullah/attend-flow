@@ -126,3 +126,18 @@ transform:translateY(0);
 }
 
 }
+
+
+
+@media (max-width:768px){
+
+.analyticsCard{
+
+right:0;
+bottom:-80px;
+
+width:180px;
+
+}
+
+}
