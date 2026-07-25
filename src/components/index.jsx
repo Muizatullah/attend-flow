@@ -4,7 +4,9 @@ import Features from "./features/Features";
 import HowItWorks from "./howItWorks/HowItWorks";
 import DashboardShowcase from "./dashboardShowcase/DashboardShowcase";
 import Testimonials from "./testimonials/Testimonials";
-import Pricing from "./pricing/Pricing";
+import WhyChoose from "./whyChoose/WhyChoose";
+import CTA from "./cta/CTA";
+
 
 export{
 Navbar,
@@ -13,6 +15,8 @@ Features,
 HowItWorks,
 DashboardShowcase,
 Testimonials,
-Pricing,
+WhyChoose,
+CTA,
+
 
 }

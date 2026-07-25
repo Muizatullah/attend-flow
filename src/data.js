@@ -1,81 +1,11 @@
-// export const navBarData = [
-//     {
-//         id: 1,
-//         pathName: "Home",
-//         pathUrl: "/",
-//     },
-//     {
-//         id: 2,
-//         pathName: "Features",
-//         pathUrl: "/features",
-//     },
-//     {
-//         id: 3,
-//         pathName: "About",
-//         pathUrl: "/about",
-//     },
-//     {
-//         id: 4,
-//         pathName: "Contact",
-//         pathUrl: "/contact",
-//     },
-   
-    
-// ]
-
-
-
-// export const featuresData = [
-//   {
-//     id: 1,
-//     icon: FaQrcode,
-//     title: "QR Code Attendance",
-//     description:
-//       "Students scan a secure QR code to mark attendance in seconds.",
-//   },
-//   {
-//     id: 2,
-//     icon: FaMapMarkedAlt,
-//     title: "GPS Verification",
-//     description:
-//       "Verify that students are physically present before attendance is recorded.",
-//   },
-//   {
-//     id: 3,
-//     icon: FaChartLine,
-//     title: "Attendance Analytics",
-//     description:
-//       "Monitor attendance trends with beautiful visual reports.",
-//   },
-//   {
-//     id: 4,
-//     icon: FaFileDownload,
-//     title: "Export Reports",
-//     description:
-//       "Download attendance reports in PDF and Excel formats.",
-//   },
-//   {
-//     id: 5,
-//     icon: FaUsers,
-//     title: "User Management",
-//     description:
-//       "Manage students, lecturers and administrators easily.",
-//   },
-//   {
-//     id: 6,
-//     icon: FaShieldAlt,
-//     title: "Secure Authentication",
-//     description:
-//       "Role-based access control keeps your data safe.",
-//   },
-
-//   {
-//     id:7,
-//     icon: FaBell,
-//     title:"Notifications",
-//     description:"Receive instant attendance alerts."
-// },
-// ];
+import {
+  FaBolt,
+  // FaShieldAlt,
+  // FaChartLine,
+  FaCloud,
+  FaUsersCog,
+  FaFileExport,
+} from "react-icons/fa";
 
 
 import {
@@ -271,5 +201,58 @@ export const pricingData = [
       "API Integration",
       "24/7 Support",
     ],
+  },
+];
+
+
+
+
+export const whyChooseData = [
+  {
+    id: 1,
+    icon: FaBolt,
+    title: "Lightning Fast",
+    description:
+      "Students record attendance in seconds using secure QR scanning.",
+  },
+
+  {
+    id: 2,
+    icon: FaShieldAlt,
+    title: "Highly Secure",
+    description:
+      "GPS verification and role-based authentication prevent attendance fraud.",
+  },
+
+  {
+    id: 3,
+    icon: FaChartLine,
+    title: "Smart Analytics",
+    description:
+      "Visual reports help institutions monitor attendance trends instantly.",
+  },
+
+  {
+    id: 4,
+    icon: FaCloud,
+    title: "Cloud Access",
+    description:
+      "Access your attendance records anytime, anywhere on any device.",
+  },
+
+  {
+    id: 5,
+    icon: FaUsersCog,
+    title: "Easy Management",
+    description:
+      "Manage students, lecturers, courses and departments from one dashboard.",
+  },
+
+  {
+    id: 6,
+    icon: FaFileExport,
+    title: "Export Reports",
+    description:
+      "Download attendance reports in PDF or Excel with one click.",
   },
 ];

@@ -1,0 +1,51 @@
+.card{
+    background:#fff;
+    border-radius:24px;
+    padding:2rem;
+    text-align:center;
+    border:1px solid #E2E8F0;
+    transition:.35s ease;
+    box-shadow:0 10px 25px rgba(15,23,42,.06);
+    height:100%;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 20px 45px rgba(37,99,235,.15);
+}
+
+.iconBox{
+    width:75px;
+    height:75px;
+    margin:0 auto 1.5rem;
+    background:#EFF6FF;
+    border-radius:20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.35s ease;
+}
+
+.card:hover .iconBox{
+    background:var(--primary-color);
+}
+
+.icon{
+    font-size:2rem;
+    color:var(--primary-color);
+    transition:.35s ease;
+}
+
+.card:hover .icon{
+    color:#fff;
+}
+
+.card h3{
+    color:#0F172A;
+    margin-bottom:1rem;
+}
+
+.card p{
+    color:#64748B;
+    line-height:1.8;
+}
