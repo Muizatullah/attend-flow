@@ -84,3 +84,30 @@ width:180px;
 }
 
 }
+
+
+@media (max-width:768px){
+
+.gpsCard,
+.qrCard,
+.notifyCard{
+
+position:static;
+
+margin:1rem auto;
+
+width:100%;
+
+max-width:280px;
+
+}
+
+.previewContainer{
+
+flex-direction:column;
+
+gap:1rem;
+
+}
+
+}

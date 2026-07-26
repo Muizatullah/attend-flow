@@ -6,6 +6,7 @@ import DashboardShowcase from "./dashboardShowcase/DashboardShowcase";
 import Testimonials from "./testimonials/Testimonials";
 import WhyChoose from "./whyChoose/WhyChoose";
 import CTA from "./cta/CTA";
+import Footer from "./footer/Footer";
 
 
 export{
@@ -17,6 +18,7 @@ DashboardShowcase,
 Testimonials,
 WhyChoose,
 CTA,
+Footer,
 
 
 }
