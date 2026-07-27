@@ -17,7 +17,8 @@ const DashboardShowcase = () => {
 
     
     <section className={styles.section}>
-      <div className="container">
+      {/* <div className="container"> */}
+      <div className={`${styles.container} container`}>
 
         {/* Left Side */}
         <div className={styles.left}>
