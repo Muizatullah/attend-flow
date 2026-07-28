@@ -1,58 +1,48 @@
+/* global styling start */
 :root {
-    --primary-color: #2563EB;
-    --secondary-color: #14B8A6;
-    --least-color:#0F172A;
-    --bg-color: #F1F5F9;
+  --primary-color: #2563eb;
+  --secondary-color: #14b8a6;
+  --description-color: #64748B;
+  --least-color: #0f172a;
+  --bg-color: #f1f5f9;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-body{
-    font-family: 'Inter', sans-serif ;
-      overflow-x:hidden;
-
+body {
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
 }
-html{
-    overflow-x:hidden;
-    scroll-behavior:smooth;
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
 }
-.container{
-
-width:100%;
-
-max-width:1200px;
-
-margin: auto;
-
-padding-inline: 1.5rem;
-
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding-inline: 1.5rem;
 }
-ul{
+ul {
   list-style: none;
- 
 }
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-img{
+img {
   width: 100%;
-  /* height: auto; */
+
   display: block;
 }
 
-@media (max-width:480px){
-
-.container{
-
-padding:0 16px;
-
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
 }
-
-}
-
-
+/* global styling end */

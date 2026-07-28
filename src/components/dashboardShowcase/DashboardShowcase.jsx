@@ -29,9 +29,9 @@ const DashboardShowcase = () => {
 
         {/* Right Side */}
         {/* <div className={styles.right}> */}
-        <div className={styles.right}>
+        {/* <div className={styles.right}>
 
-          {/* <DashboardUI /> */}
+          
               <PhoneMockup />
                   <GpsCard />
                       <AttendanceCard />
@@ -55,7 +55,18 @@ const DashboardShowcase = () => {
             value="92%"
           />
 
-        </div>
+        </div> */}
+
+
+
+        <div className={styles.right}>
+  <div className={styles.showcase}>
+    <PhoneMockup />
+    <GpsCard />
+    <AttendanceCard />
+    <AnalyticsCard />
+  </div>
+</div>
 
       </div>
     </section>

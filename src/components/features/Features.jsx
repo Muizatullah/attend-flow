@@ -12,7 +12,7 @@ const Features = () => {
 
         <div className={styles.heading}>
 
-          <span>FEATURES</span>
+          <span>Features</span>
 
           <h2>Why Choose AttendFlow?</h2>
 
