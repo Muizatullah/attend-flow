@@ -1,13 +1,16 @@
-import styles from "./dashboardShowcase.module.css";
-import DashboardUI from "../dashboardUI/DashboardUI";
-import FloatingCard from "../floatingCard/FloatingCard";
-import PhoneMockup from "../phoneMockup/PhoneMockup";
-import GpsCard from "../gpsCard/GpsCard";
-import AttendanceCard from "../attendanceCard/AttendanceCard";
-import AnalyticsCard from "../analyticsCard/AnalyticsCard";
 
-const DashboardShowcase = () => {
-  return (
+// import DashboardUI from "../dashboardUI/DashboardUI";
+// import FloatingCard from "../floatingCard/FloatingCard";
+
+
+// import styles from "./dashboardShowcase.module.css";
+// import PhoneMockup from "../phoneMockup/PhoneMockup";
+// import GpsCard from "../gpsCard/GpsCard";
+// import AttendanceCard from "../attendanceCard/AttendanceCard";
+// import AnalyticsCard from "../analyticsCard/AnalyticsCard";
+
+// const DashboardShowcase = () => {
+//   return (
 
 
 
@@ -16,59 +19,81 @@ const DashboardShowcase = () => {
 
 
     
-    <section className={styles.section}>
-      {/* <div className="container"> */}
-      <div className={`${styles.container} container`}>
+//     <section className={styles.section}>
+      
+//       <div className={`${styles.container} container`}>
 
-        {/* Left Side */}
-        <div className={styles.left}>
-          {/* Heading */}
-          {/* Description */}
-          {/* Buttons */}
+        
+//         <div className={styles.left}>
+         
+//         </div>
+
+       
+
+
+
+//         <div className={styles.right}>
+//   <div className={styles.showcase}>
+//     <PhoneMockup />
+//     <GpsCard />
+//     <AttendanceCard />
+//     <AnalyticsCard />
+//   </div>
+// </div>
+
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default DashboardShowcase;
+
+
+
+import styles from "./dashboardShowcase.module.css";
+import PhoneMockup from "../phoneMockup/PhoneMockup";
+import GpsCard from "../gpsCard/GpsCard";
+import AttendanceCard from "../attendanceCard/AttendanceCard";
+import AnalyticsCard from "../analyticsCard/AnalyticsCard";
+
+const DashboardShowcase = () => {
+  return (
+    <section className={styles.section}>
+
+      <div className="container">
+
+        <div className={styles.heading}>
+
+          <span>PRODUCT SHOWCASE</span>
+
+          <h2>
+            See AttendFlow
+            <br />
+            In Action
+          </h2>
+
+          <p>
+            From QR attendance to GPS verification and live analytics,
+            everything works together in one beautiful dashboard built
+            for modern schools and universities.
+          </p>
+
         </div>
 
-        {/* Right Side */}
-        {/* <div className={styles.right}> */}
-        {/* <div className={styles.right}>
+        <div className={styles.showcase}>
 
-          
-              <PhoneMockup />
-                  <GpsCard />
-                      <AttendanceCard />
-                         <AnalyticsCard />
+          <PhoneMockup />
 
-          <FloatingCard
-            icon="📍"
-            title="GPS Verified"
-            value="Within Campus"
-          />
+          <GpsCard />
 
-          <FloatingCard
-            icon="✅"
-            title="QR Scan"
-            value="Successful"
-          />
+          <AttendanceCard />
 
-          <FloatingCard
-            icon="📊"
-            title="Attendance"
-            value="92%"
-          />
+          <AnalyticsCard />
 
-        </div> */}
-
-
-
-        <div className={styles.right}>
-  <div className={styles.showcase}>
-    <PhoneMockup />
-    <GpsCard />
-    <AttendanceCard />
-    <AnalyticsCard />
-  </div>
-</div>
+        </div>
 
       </div>
+
     </section>
   );
 };
