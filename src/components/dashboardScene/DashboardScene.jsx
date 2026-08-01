@@ -1,3 +1,5 @@
+
+
 import styles from "./dashboardScene.module.css";
 import {
   FaUsers,
@@ -18,6 +20,7 @@ const DashboardScene = () => {
 
         <div className={styles.sidebar}>
           <h2>AF</h2>
+          <p>AttendFlow</p>
 
           <ul>
             <li className={styles.active}>Dashboard</li>
@@ -105,3 +108,7 @@ const DashboardScene = () => {
 };
 
 export default DashboardScene;
+
+
+
+
