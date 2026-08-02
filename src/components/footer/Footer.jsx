@@ -1,6 +1,6 @@
 import styles from "./footer.module.css";
 
-import Logo from "../../assets/AF Logo.png";
+import Logo from "../../assets/navbarLogo.jpeg";
 
 import {
   FaWhatsapp,

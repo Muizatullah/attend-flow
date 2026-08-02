@@ -5,7 +5,7 @@ import { Navbar, Hero, Features, HowItWorks, DashboardShowcase, Testimonials, Wh
 const HomePage = () => {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Hero />
       <Features />
       <HowItWorks />
