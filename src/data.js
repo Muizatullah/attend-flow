@@ -27,16 +27,22 @@ export const navBarData = [
   },
   {
     id: 2,
-    pathName: "Features",
-    pathUrl: "/features",
-  },
-  {
-    id: 3,
     pathName: "About",
     pathUrl: "/about",
   },
   {
+    id: 3,
+    pathName: "Features",
+    pathUrl: "/features",
+  },
+  {
     id: 4,
+    pathName: "Pricing",
+    pathUrl: "/pricing",
+  },
+  
+  {
+    id: 5,
     pathName: "Contact",
     pathUrl: "/contact",
   },

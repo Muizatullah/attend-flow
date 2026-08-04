@@ -1,14 +1,16 @@
 import HomePage from "./home/HomePage";
-import Features from "./features/Features";
 import About from "./about/About";
+import Features from "./features/Features";
+import Pricing from "./pricing/Pricing"
 import Contact from "./contact/Contact";
 import Login from "./login/Login";
 import Register from "./register/Register"
 
 export{
 HomePage,
-Features,
 About,
+Features,
+Pricing,
 Contact,
 Login,
 Register
