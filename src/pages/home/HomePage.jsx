@@ -1,4 +1,5 @@
-import { Navbar, Hero, Features, HowItWorks, DashboardShowcase, Testimonials, WhyChoose, CTA, Footer,} from  "../../components/index.jsx";
+import { Navbar, Hero, Features, HowItWorks, DashboardShowcase, SecureCheck ,Testimonials, WhyChoose, CTA, Footer,} from  "../../components/index.jsx";
+// import SecureCheck from "../../components/secureCheck/secureCheck.jsx";
 
 
 
@@ -10,6 +11,7 @@ const HomePage = () => {
       <Features />
       <HowItWorks />
       <DashboardShowcase />
+      <SecureCheck />
       <Testimonials />
       <WhyChoose />
       <CTA />
