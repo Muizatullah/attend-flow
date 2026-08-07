@@ -170,6 +170,439 @@
   margin-bottom: 2rem;
 }
 
+
+/* =====================================
+   LIVE VERIFICATION
+===================================== */
+
+.flowHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+
+.flowHeader span {
+  font-size: 0.7rem;
+  letter-spacing: 1.5px;
+  color: #64748b;
+  font-weight: 700;
+}
+
+.flowHeader h3 {
+  margin-top: 0.4rem;
+  color: #0f172a;
+  font-size: 1.3rem;
+}
+
+
+/* LIVE INDICATOR */
+
+.liveDot {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  padding: 0.4rem 0.7rem;
+
+  border-radius: 50px;
+
+  background: #ecfdf5;
+
+  color: #16a34a;
+
+  font-size: 0.7rem;
+
+  font-weight: 700;
+}
+
+.liveDot span {
+  width: 7px;
+  height: 7px;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  animation: pulse 1.5s infinite;
+}
+
+
+/* =====================================
+   STEPS
+===================================== */
+
+.steps {
+  display: flex;
+  flex-direction: column;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  padding: 1rem;
+
+  border-radius: 16px;
+
+  background: #f8fafc;
+
+  border: 1px solid transparent;
+
+  transition:
+    transform 0.4s ease,
+    background 0.4s ease,
+    border 0.4s ease,
+    box-shadow 0.4s ease;
+}
+
+
+/* ACTIVE STEP */
+
+.activeStep {
+  background: #eff6ff;
+
+  border-color: #bfdbfe;
+
+  transform: scale(1.02);
+
+  box-shadow:
+    0 10px 30px rgba(37, 99, 235, 0.12);
+}
+
+
+/* COMPLETED STEP */
+
+.completedStep {
+  background: #f0fdf4;
+
+  border-color: #bbf7d0;
+}
+
+
+/* ICON */
+
+.stepIcon {
+  width: 48px;
+  height: 48px;
+
+  flex-shrink: 0;
+
+  display: flex;
+
+  justify-content: center;
+
+  align-items: center;
+
+  border-radius: 14px;
+
+  background: #2563eb;
+
+  color: white;
+
+  font-size: 1.2rem;
+
+  transition: 0.4s;
+}
+
+.completedStep .stepIcon {
+  background: #22c55e;
+}
+
+.activeStep .stepIcon {
+  animation: iconPulse 1.5s infinite;
+}
+
+
+/* TEXT */
+
+.stepText {
+  flex: 1;
+}
+
+.stepText h4 {
+  color: #0f172a;
+  margin-bottom: 0.25rem;
+}
+
+.stepText p {
+  color: #64748b;
+  font-size: 0.85rem;
+}
+
+
+/* CHECK */
+
+.check {
+  width: 24px;
+  height: 24px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: #22c55e;
+
+  color: white;
+
+  font-size: 0.75rem;
+
+  animation: checkAppear 0.4s ease;
+}
+
+
+/* =====================================
+   CONNECTOR
+===================================== */
+
+.connector {
+  width: 2px;
+
+  height: 25px;
+
+  background: #e2e8f0;
+
+  margin-left: 34px;
+
+  transition: background 0.5s ease;
+}
+
+.connectorActive {
+  background: #22c55e;
+}
+
+
+/* =====================================
+   SUCCESS
+===================================== */
+
+.success {
+  display: flex;
+
+  align-items: center;
+
+  gap: 1rem;
+
+  margin-top: 1.5rem;
+
+  padding: 1rem;
+
+  border-radius: 16px;
+
+  background: #f1f5f9;
+
+  color: #94a3b8;
+
+  transition:
+    background 0.5s ease,
+    color 0.5s ease,
+    transform 0.5s ease;
+}
+
+.success svg {
+  font-size: 1.5rem;
+}
+
+.success div {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 0.2rem;
+}
+
+.success strong {
+  font-size: 0.9rem;
+}
+
+.success span {
+  font-size: 0.75rem;
+}
+
+
+/* SUCCESS ACTIVATED */
+
+.successActive {
+  background: #dcfce7;
+
+  color: #16a34a;
+
+  transform: scale(1.02);
+
+  box-shadow:
+    0 15px 35px rgba(34, 197, 94, 0.15);
+}
+
+
+/* =====================================
+   PROGRESS
+===================================== */
+
+.progressContainer {
+  margin-top: 1.5rem;
+}
+
+.progressLabels {
+  display: flex;
+
+  justify-content: space-between;
+
+  margin-bottom: 0.6rem;
+
+  font-size: 0.75rem;
+
+  color: #64748b;
+}
+
+.progressLabels strong {
+  color: #2563eb;
+}
+
+.progressBar {
+  width: 100%;
+
+  height: 7px;
+
+  background: #e2e8f0;
+
+  border-radius: 20px;
+
+  overflow: hidden;
+}
+
+.progress {
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    #2563eb,
+    #14b8a6
+  );
+
+  border-radius: 20px;
+
+  transition: width 0.8s ease;
+}
+
+
+/* =====================================
+   ANIMATIONS
+===================================== */
+
+@keyframes pulse {
+
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+}
+
+
+@keyframes iconPulse {
+
+  0% {
+    box-shadow:
+      0 0 0 0 rgba(37, 99, 235, 0.3);
+  }
+
+  70% {
+    box-shadow:
+      0 0 0 10px rgba(37, 99, 235, 0);
+  }
+
+  100% {
+    box-shadow:
+      0 0 0 0 rgba(37, 99, 235, 0);
+  }
+
+}
+
+
+@keyframes checkAppear {
+
+  from {
+    transform: scale(0);
+  }
+
+  to {
+    transform: scale(1);
+  }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 768px) {
+
+  .flowHeader {
+    align-items: center;
+  }
+
+  .flowHeader h3 {
+    font-size: 1.1rem;
+  }
+
+  .step {
+    padding: 0.8rem;
+  }
+
+  .stepIcon {
+    width: 42px;
+    height: 42px;
+  }
+
+  .connector {
+    margin-left: 29px;
+    height: 20px;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .flowHeader {
+    flex-direction: column;
+
+    gap: 0.8rem;
+  }
+
+  .liveDot {
+    align-self: flex-start;
+  }
+
+  .stepText h4 {
+    font-size: 0.9rem;
+  }
+
+  .stepText p {
+    font-size: 0.75rem;
+  }
+
+  .success {
+    padding: 0.8rem;
+  }
+
+}
 .step {
   display: flex;
   align-items: center;
@@ -306,6 +739,421 @@
   .button{
     width:100%;
     justify-content:center;
+  }
+
+}
+
+
+
+/* =========================================
+   STAGE 3 — PREMIUM SAAS EFFECTS
+========================================= */
+
+/* Premium background atmosphere */
+
+.secureCheck {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Large ambient glow */
+
+.secureCheck::before {
+  content: "";
+  position: absolute;
+
+  width: 500px;
+  height: 500px;
+
+  left: -250px;
+  top: 15%;
+
+  background: rgba(37, 99, 235, 0.08);
+
+  border-radius: 50%;
+
+  filter: blur(80px);
+
+  pointer-events: none;
+}
+
+/* Teal glow */
+
+.secureCheck::after {
+  content: "";
+  position: absolute;
+
+  width: 450px;
+  height: 450px;
+
+  right: -200px;
+  bottom: 5%;
+
+  background: rgba(20, 184, 166, 0.08);
+
+  border-radius: 50%;
+
+  filter: blur(90px);
+
+  pointer-events: none;
+}
+
+
+/* Keep content above the glow */
+
+.secureCheck > .container {
+  position: relative;
+  z-index: 2;
+}
+
+
+/* =========================================
+   PREMIUM FLOW CARD
+========================================= */
+
+.flowCard {
+  position: relative;
+
+  background:
+    linear-gradient(
+      145deg,
+      rgba(255,255,255,0.95),
+      rgba(248,250,252,0.82)
+    );
+
+  border: 1px solid rgba(255,255,255,0.9);
+
+  box-shadow:
+    0 30px 80px rgba(15,23,42,0.10),
+    0 10px 30px rgba(37,99,235,0.05);
+
+  backdrop-filter: blur(25px);
+
+  animation: floatingCard 6s ease-in-out infinite;
+}
+
+
+/* Light shine across card */
+
+.flowCard::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 1px;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,1),
+    transparent
+  );
+}
+
+
+/* =========================================
+   CARD FLOATING
+========================================= */
+
+@keyframes floatingCard {
+
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+
+}
+
+
+/* =========================================
+   PREMIUM TAG
+========================================= */
+
+.tag {
+  position: relative;
+
+  box-shadow:
+    0 8px 25px rgba(37,99,235,0.08);
+
+  transition: .3s ease;
+}
+
+.tag:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 12px 30px rgba(37,99,235,0.15);
+}
+
+
+
+
+/* =========================================
+   FEATURE CARDS
+========================================= */
+
+.feature {
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* Small blue shine */
+
+.feature::before {
+  content: "";
+
+  position: absolute;
+
+  width: 100px;
+  height: 100px;
+
+  right: -50px;
+  top: -50px;
+
+  background: rgba(37,99,235,0.05);
+
+  border-radius: 50%;
+
+  transition: .4s;
+}
+
+.feature:hover::before {
+  transform: scale(2);
+}
+
+
+/* =========================================
+   STEP CARD PREMIUM EFFECT
+========================================= */
+
+.step {
+  position: relative;
+
+  overflow: hidden;
+}
+
+
+/* Moving shine */
+
+.step::after {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -100%;
+
+  width: 50%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.6),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+
+  transition: .6s;
+}
+
+
+/* Shine when active */
+
+.activeStep::after {
+  left: 130%;
+}
+
+
+/* =========================================
+   ACTIVE STEP GLOW
+========================================= */
+
+.activeStep {
+  box-shadow:
+    0 10px 35px rgba(37,99,235,0.12),
+    0 0 0 1px rgba(37,99,235,0.05);
+}
+
+
+/* =========================================
+   ICON GLOW
+========================================= */
+
+.activeStep .stepIcon {
+
+  box-shadow:
+    0 10px 25px rgba(37,99,235,0.25);
+}
+
+.completedStep .stepIcon {
+
+  box-shadow:
+    0 10px 25px rgba(34,197,94,0.20);
+}
+
+
+/* =========================================
+   SUCCESS GLOW
+========================================= */
+
+.successActive {
+
+  box-shadow:
+    0 15px 35px rgba(34,197,94,0.15),
+    0 0 0 1px rgba(34,197,94,0.08);
+
+}
+
+
+/* =========================================
+   PROGRESS GLOW
+========================================= */
+
+.progress {
+
+  box-shadow:
+    0 0 12px rgba(37,99,235,0.35);
+
+}
+
+
+/* =========================================
+   BUTTON PREMIUM EFFECT
+========================================= */
+
+.button {
+
+  position: relative;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 10px 25px rgba(37,99,235,0.18);
+}
+
+
+/* Button shine */
+
+.button::before {
+
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: -120%;
+
+  width: 80%;
+  height: 100%;
+
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,0.25),
+    transparent
+  );
+
+  transform: skewX(-20deg);
+
+  transition: .6s;
+}
+
+.button:hover::before {
+  left: 130%;
+}
+
+
+/* =========================================
+   DESKTOP VERIFICATION CARD
+========================================= */
+
+@media (min-width: 993px) {
+
+  .right {
+    perspective: 1000px;
+  }
+
+  .flowCard {
+
+    transform-style: preserve-3d;
+
+  }
+
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 992px) {
+
+  .flowCard {
+    animation-duration: 7s;
+  }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 768px) {
+
+  .secureCheck::before {
+    width: 300px;
+    height: 300px;
+  }
+
+  .secureCheck::after {
+    width: 300px;
+    height: 300px;
+  }
+
+  .flowCard {
+
+    animation: none;
+
+    box-shadow:
+      0 20px 50px rgba(15,23,42,0.08);
+
+  }
+
+}
+
+
+/* =========================================
+   SMALL PHONES
+========================================= */
+
+@media (max-width: 480px) {
+
+  .secureCheck {
+    overflow: hidden;
+  }
+
+  .flowCard {
+    border-radius: 22px;
+  }
+
+  .step {
+    border-radius: 14px;
   }
 
 }
